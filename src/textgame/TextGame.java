@@ -81,7 +81,7 @@ public class TextGame {
         System.out.println("Your Scrummaster asks you what you did yesterday. Luckily you brought your "+ item3.toUpperCase());
         
         if(item3.equalsIgnoreCase("laptop")){
-            System.out.println("Except your battery is dead. You look bad.");
+            System.out.println("...except your battery is dead. You look bad.");
             play.loseHealth();
         }else{
             System.out.println("You have all your notes written down and report on them.");
@@ -175,6 +175,11 @@ public class TextGame {
         }else{
             System.out.println("You are a ROCK STAR! You always had this.");
         }
+        
+        System.out.println("HIT 'ENTER' to continue.");
+        scan.nextLine();
+        
+        play.getInventory();
         
         System.out.println("The End");
         System.out.println("Thanks for playing "+play.getName());

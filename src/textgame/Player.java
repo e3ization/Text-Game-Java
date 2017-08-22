@@ -46,9 +46,12 @@ public class Player {
         }
     }
     public void getInventory(){
-        System.out.println("You have the following on you: ");
-        for(int i=0;i<item.length;i++)
+        System.out.println("You had the following on you: ");
+        int i =0;
+        while(i<item.length){
         System.out.println(item[i].toUpperCase());
+        i++;
+        }
     }
     
     public int rollDice(){
